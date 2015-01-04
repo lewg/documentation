@@ -749,7 +749,7 @@ kind: documentation
       </div>
       <%= right_side_div %>
         <h5>Signature</h5>
-        <code>POST /api/v1/downtime</code>
+        <code>PUT /api/v1/downtime/:downtime_id</code>
         <h5>Example Request</h5>
         <%= snippet_code_block "api-monitor-update-downtime.py" %>
         <%= snippet_code_block "api-monitor-update-downtime.rb" %>
@@ -801,6 +801,26 @@ kind: documentation
         <%= snippet_result_code_block "api-monitor-get-downtimes.sh" %>
       </div>
     </div>
+
+    <!-- Get all monitor downtimes -->
+    <h4 id="get-downtime">Get a monitor downtime</h4>
+    <div class="row-fluid">
+      <%= left_side_div %>
+        <h5>Arguments</h5>
+          <%= no_args %>
+      </div>
+      <%= right_side_div %>
+        <h5>Signature</h5>
+        <code>GET /api/v1/downtime/:downtime_id</code>
+        <h5>Example Request</h5>
+        <%= snippet_code_block "api-monitor-get-downtime.py" %>
+        <!-- TO FIX: SH and RB -->
+        <h5>Example Response</h5>
+        <%= snippet_result_code_block "api-monitor-get-downtime.py" %>
+        <!-- TO FIX: SH and RB -->
+      </div>
+    </div>
+
 
     <!--
    =====================================================================
